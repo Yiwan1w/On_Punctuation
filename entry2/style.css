@@ -1,0 +1,497 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: antiquewhite;
+    font-family: optima;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        overflow: hidden;
+    }
+}
+.navigation{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    /*box-shadow: 0 0.6rem 3rem black;*/
+    cursor: pointer;
+    z-index: 300;
+}
+@media screen and (min-width: 768px) {
+    .navigation{
+        top: 3rem;
+        right: 3rem;
+        height: 6rem;
+        width: 6rem;
+        /*box-shadow: 0 0.6rem 3rem black;*/
+    }
+}
+.navigation1{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    /*box-shadow: 0 0.6rem 3rem black;*/
+    cursor: pointer;
+    z-index: 300;
+}
+@media screen and (min-width: 768px) {
+    .navigation1{
+        bottom: 3rem;
+        right: 3rem;
+        height: 6rem;
+        width: 6rem;
+        /*box-shadow: 0 0.6rem 3rem black;*/
+    }
+}
+.navigation2{
+    position: fixed;
+    bottom: 8rem;
+    right: 2rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    /*box-shadow: 0 0.6rem 3rem black;*/
+    cursor: pointer;
+    z-index: 300;
+}
+@media screen and (min-width: 768px) {
+    .navigation2{
+        bottom: 10rem;
+        right: 3rem;
+        height: 6rem;
+        width: 6rem;
+        /*box-shadow: 0 0.6rem 3rem black;*/
+    }
+}
+.navigation a, .navigation1 a, .navigation2 a{
+    text-decoration: none;
+    text-align: center;
+}
+.menu{
+    color: black;
+    font-family: optima;
+    font-size: 25px;
+    letter-spacing: -3px;
+    text-align: center;
+    justify-content: center;
+}
+@media screen and (min-width: 768px) {
+    .menu{
+        text-align: center;
+        justify-content: center;
+        color: black;
+        font-family: optima;
+        font-size: 30px;
+        letter-spacing: -3px;
+        align-items: center;
+    }
+}
+.menu:hover{
+    color: antiquewhite;
+    letter-spacing: 0px;
+    transition: all .2s;
+}
+.next, .before{
+    color: black;
+    font-family: optima;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -3px;
+}
+@media screen and (min-width: 768px) {
+    .next,.before{
+        text-align: center;
+        justify-content: center;
+        color: black;
+        font-family: optima;
+        font-size: 30px;
+        letter-spacing: -3px;
+        align-items: center;
+    }
+}
+.next:hover,.before:hover{
+    color: antiquewhite;
+    letter-spacing: 0px;
+    transition: all .2s;
+}
+/*.circles {
+    display: flex;
+  }
+.circle-with-text {
+    position: relative;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 10px;
+    display: flex;
+    height: 380px;
+    width: 380px;
+    color: antiquewhite;
+  }
+.multi-line-text{
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+    font-size: 18px;
+  }*/
+
+  @media screen and (min-width: 768px) {
+/*box2 */
+.box {
+    --s:330px;  /*Size of the circle */
+    --p:30px;   /* padding */
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    font-size:18px;
+    text-align:justify;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+.juhao{
+    color: black;
+}
+.juhao:hover{
+    color: antiquewhite;
+    transition: all .7s;
+}
+  .box i,
+  .box::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+  
+  .box i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*3 box1 */
+.box1 {
+    --s:360px;  /*Size of the circle */
+    --p:30px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:18px;
+    text-align:justify;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+  }
+.box1 i,.box1::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box1 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*1 box2 */
+.box2 {
+    --s:255px;  /*Size of the circle */
+    --p:20px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:17px;
+    text-align:justify;
+    position: absolute;
+    top: 5%;
+    right: 50%;
+  }
+.box2 i,.box2::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box2 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*4 box3 */
+.box3 {
+    --s:466px;  /*Size of the circle */
+    --p:20px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:17px;
+    text-align:justify;
+    position: absolute;
+    top: 40%;
+    left: 16%;
+  }
+.box3 i,.box3::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box3 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*5 box4 */
+.box4 {
+    --s:360px;  /*Size of the circle */
+    --p:30px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:18px;
+    text-align:justify;
+    position: absolute;
+    top: 60%;
+    right: 20%;
+  }
+.box4 i,.box4::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box4 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*6 box5 */
+.box5 {
+    --s:180px;  /*Size of the circle */
+    --p:10px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:17px;
+    text-align:justify;
+    position: absolute;
+    top: 30%;
+    right: 40%;
+  }
+.box5 i,.box5::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box5 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+}
+
+/*in small screen size */
+/*box2 */
+.box {
+    --s:330px;  /*Size of the circle */
+    --p:30px;   /* padding */
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:18px;
+    text-align:justify;
+    margin: 10px auto;
+  }
+  
+  .box i,
+  .box::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+  
+  .box i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*3 box1 */
+.box1 {
+    --s:360px;  /*Size of the circle */
+    --p:30px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:18px;
+    text-align:justify;
+    margin: 10px auto;
+  }
+.box1 i,.box1::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box1 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*1 box2 */
+.box2 {
+    --s:255px;  /*Size of the circle */
+    --p:20px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:17px;
+    text-align:justify;
+    margin: 10px auto;
+  }
+.box2 i,.box2::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box2 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*4 box3 */
+.box3 {
+    --s:466px;  /*Size of the circle */
+    --p:20px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:17px;
+    text-align:justify;
+    margin: 10px auto;
+  }
+.box3 i,.box3::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box3 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*5 box4 */
+.box4 {
+    --s:360px;  /*Size of the circle */
+    --p:30px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:18px;
+    text-align:justify;
+    margin: 10px auto;
+  }
+.box4 i,.box4::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box4 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/*6 box5 */
+.box5 {
+    --s:180px;  /*Size of the circle */
+    --p:10px;   /* padding */
+  
+    height: var(--s);
+    width: var(--s);
+    border-radius: 50%;
+    background: black;
+    color:antiquewhite;
+    font-size:17px;
+    text-align:justify;
+    margin: 10px auto;
+  }
+.box5 i,.box5::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+.box5 i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+.juhao{
+    color: black;
+}
+.juhao:hover{
+    color: antiquewhite;
+    transition: all .7s;
+}

@@ -1,0 +1,11 @@
+var i = 0;
+var txt = 'Let us begin with these I use the least first and these are colons and semi-colons, one might add to these commas. When I first began writing, I felt that writing should go on, I still do feel that it should go on but when I first began writing I was completely possessed by the necessity that writing should go on and on and if writing should go on what had colons and commas to do with it, what had periods to do with it what had small letters and capitals to do with it to do with writing going on which was at that time the most profound need I had in connection with writing. What had colons and semi-colons to do with it what had commas to do with it what had periods to do with it. There are two different way of thinking about colons and semicolons you can think of them as commas and as such they are purely servile or you can think of them as periods and then using them can make you feel adventurous I can see that one might feel about them as periods but I myself never have, I began unfortunately to feel them as a comma and commas are servile they have no life of their own they are dependent upon use and convenience and they are put there just for practical purposes. Semi-colons and colons had for me from the first completely this character the character that a comma has and not the character that a period has and therefore and definitely I have never used them. But now dimly and definitely I do see that they might well possibly they might have in them something of the character of the period and so it might have been an adventure to use them. I really do not think so. I think however lively they are or disguised they are they are definitely more comma than period and so really I cannot regret not having used them. They are more powerful more imposing more pretentious than a comma but they are a comma all the same. They really have within them deeply within them fundamentally within them the comma nature. And now what does a comma do and what has it to do and why do I feel as I do about them.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}

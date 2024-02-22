@@ -1,0 +1,127 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.navigation{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0.6rem 3rem antiquewhite;
+    cursor: pointer;
+    z-index: 300;
+}
+@media screen and (min-width: 768px) {
+    .navigation{
+        top: 3rem;
+        right: 3rem;
+        height: 6rem;
+        width: 6rem;
+        box-shadow: 0 0.6rem 3rem antiquewhite;
+    }
+}
+.navigation1{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0.6rem 3rem antiquewhite;
+    cursor: pointer;
+    z-index: 300;
+}
+@media screen and (min-width: 768px) {
+    .navigation1{
+        bottom: 3rem;
+        right: 3rem;
+        height: 6rem;
+        width: 6rem;
+        box-shadow: 0 0.6rem 3rem antiquewhite;
+    }
+}
+.navigation2{
+    position: fixed;
+    bottom: 8rem;
+    right: 2rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0.6rem 3rem antiquewhite;
+    cursor: pointer;
+    z-index: 300;
+}
+@media screen and (min-width: 768px) {
+    .navigation2{
+        bottom: 10rem;
+        right: 3rem;
+        height: 6rem;
+        width: 6rem;
+        box-shadow: 0 0.6rem 3rem antiquewhite;
+    }
+}
+.navigation a, .navigation1 a, .navigation2 a{
+    text-decoration: none;
+    text-align: center;
+}
+.menu{
+    color: antiquewhite;
+    font-family: optima;
+    font-size: 25px;
+    letter-spacing: -3px;
+    text-align: center;
+    justify-content: center;
+}
+@media screen and (min-width: 768px) {
+    .menu{
+        text-align: center;
+        justify-content: center;
+        color: antiquewhite;
+        font-family: optima;
+        font-size: 30px;
+        letter-spacing: -3px;
+    }
+}
+.menu:hover{
+    letter-spacing: 0px;
+    transition: all .2s;
+}
+.next, .before{
+    color: antiquewhite;
+    font-family: optima;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -3px;
+}
+@media screen and (min-width: 768px) {
+    .next,.before{
+        text-align: center;
+        justify-content: center;
+        color: antiquewhite;
+        font-family: optima;
+        font-size: 30px;
+        letter-spacing: -3px;
+    }
+}
+.next:hover,.before:hover{
+    letter-spacing: 0px;
+    transition: all .2s;
+}
+
+#demo{
+    color: antiquewhite;
+}
+
